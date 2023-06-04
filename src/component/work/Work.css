@@ -1,0 +1,154 @@
+#work {
+  width: 100%;
+  background-color: var(--primary-color);
+  padding: 0.5rem 2rem 2rem 4rem;
+  color: var(--text-color);
+}
+
+.workDesign {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.workTypo {
+  font-size: 6rem;
+  font-weight: 800;
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  line-height: 4.2rem;
+  opacity: 25%;
+  font-style: italic;
+}
+
+.workOpening {
+  font-size: 1.8rem;
+}
+
+.workTypo span {
+  pointer-events: none;
+}
+
+.workContainerMain {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  transform: translateY(-3.3rem);
+}
+
+.workMain {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.workText {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.workTitle {
+  display: flex;
+  flex-direction: column;
+  line-height: 0.8rem;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.workNumber,
+.workTitle span:nth-child(1) {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.workTitle span:nth-child(2) {
+  font-size: 0.9;
+}
+
+.workImage {
+  width: 450px;
+  height: 450px;
+}
+
+.workLink {
+  height: 45vh;
+  display: flex;
+  align-items: end;
+  font-size: 1.2rem;
+  width: 35%;
+  justify-content: center;
+}
+
+.workLinked {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  color: var(--text-color);
+  border-bottom: 1px solid var(--text-color);
+  transition: all 0.3s;
+  padding: 0 0.3rem;
+}
+
+.workLinked:hover {
+  background-color: var(--text-color);
+  color: var(--primary-color);
+}
+
+/* breakpoints */
+@media screen and (max-width: 992px) {
+}
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 576px) {
+  #work {
+    width: 100%;
+    background-color: var(--primary-color);
+    padding: 2rem 1rem;
+  }
+  .workContainerMain {
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .workDesign {
+    position: absolute;
+    padding-top: 5.5rem;
+  }
+  .workDesign span {
+    position: absolute;
+    right: 7rem;
+  }
+  .workTypo{
+    display: flex;
+    flex-direction: column;
+    line-height: 2.1rem;
+  }
+  .workMain {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .workLink {
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    width: 75%;
+    padding: 0 2rem 0 0;
+    height: 50vh;
+  }
+  .workImage {
+    width: 195px;
+    height: 195px;
+  }
+}
+@media screen and (max-width: 350px) {
+}
