@@ -4,8 +4,8 @@ import "./Service.css";
 
 const Service = () => {
   const { scrollYProgress } = useScroll();
-  const frontend = useTransform(scrollYProgress, [0, 1], [0, 500]);
-  const backend = useTransform(scrollYProgress, [0, 1], [0, 400]);
+  const frontend = useTransform(scrollYProgress, [0, 1], [0, 450]);
+  const backend = useTransform(scrollYProgress, [0, 1], [0, 350]);
   const android = useTransform(scrollYProgress, [0, 1], [0, 200]);
   return (
     <section id="service">
@@ -15,13 +15,13 @@ const Service = () => {
           <span className="outlineTypo">Developer</span> - Frontend{" "}
           <span className="outlineTypo">Developer</span> -{" "}
         </motion.span>
-        <motion.spans tyle={{ x: backend }}>
+        <motion.spans style={{ x: backend }}>
           <span className="outlineTypo">Backend</span> Developer - Backend{" "}
           <span className="outlineTypo">Developer</span> - Backend{" "}
           <span className="outlineTypo">Developer</span> - Backend {" "}
           <span className="outlineTypo">Developer</span> -
         </motion.spans>
-        <motion.spans tyle={{ x: android }}>
+        <motion.spans style={{ x: android }}>
           <span className="outlineTypo">Android</span> Developer - Android{" "}
           <span className="outlineTypo">Developer</span> - Android{" "}
           <span className="outlineTypo">Developer</span> - Android {" "}
